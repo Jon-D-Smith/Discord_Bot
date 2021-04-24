@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require('./config.json');
+// const config = require('./config.json');
 const fetch = require("node-fetch");
 client.once('ready', () => {
     console.log('Ready!');
@@ -24,5 +24,5 @@ Please do not spam this bot as I am using a free api and don't want to DDOS them
     console.log(message.content);
 })
 
-client.login(process.env.TOKEN_DJS || config.token);
+client.login(process.env.TOKEN_DJS);
 

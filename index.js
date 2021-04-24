@@ -1,8 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
+const dotenv = require('dotenv');
+dotenv.config();
 const config = require('./config.json');
 const fetch = require("node-fetch");
-const TOKEN = config.token
+const TOKEN = process.env.TOKEN;
 client.once('ready', () => {
     console.log('Ready!');
 });

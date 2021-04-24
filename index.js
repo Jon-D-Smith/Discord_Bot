@@ -24,5 +24,5 @@ Please do not spam this bot as I am using a free api and don't want to DDOS them
     console.log(message.content);
 })
 
-client.login(process.env.TOKEN || config.token);
+client.login(process.env.TOKEN_DJS || config.token);
 

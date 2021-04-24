@@ -1,0 +1,24 @@
+{
+  "name": "Discord_Bot",
+  "version": "1.0.0",
+  "description": "Using the discord.js api to make a simple discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jon-D-Smith/Discord_Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jon-D-Smith/Discord_Bot/issues"
+  },
+  "homepage": "https://github.com/Jon-D-Smith/Discord_Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0"
+  }
+}

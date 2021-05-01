@@ -36,8 +36,8 @@ Please do not spam this bot as I am using a free api and don't want to DDOS them
         const data = await response.json();
         if (previousCost <= data.quotes.USD.price) {
             const randomGood = Math.floor(Math.random() * goodGifs.length);
-            message.channel.send(`The current price of doge is ${data.quotes.USD.price}. 
-The previous price was ${previousCost}.
+            message.channel.send(`The current price of doge is $${data.quotes.USD.price}. 
+            The last time I checked for you, it was: $${previousCost}.
 To the moon!
         
 ${goodGifs[randomGood]}`)
@@ -45,8 +45,8 @@ ${goodGifs[randomGood]}`)
         } else {
             const randomBad = Math.floor(Math.random() * badGifs.length);
 
-            message.channel.send(`The current price of doge is ${data.quotes.USD.price}. 
-The last time I checked for you, it was:  ${previousCost}.
+            message.channel.send(`The current price of doge is $${data.quotes.USD.price}. 
+The last time I checked for you, it was:  $${previousCost}.
 It's just a dip, HODL!
         
 ${badGifs[randomBad]}`)

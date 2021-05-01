@@ -34,7 +34,7 @@ Please do not spam this bot as I am using a free api and don't want to DDOS them
 
         const response = await fetch('https://api.coinpaprika.com/v1/tickers/doge-dogecoin');
         const data = await response.json();
-        if (previousCost < data.quotes.USD.price) {
+        if (previousCost <= data.quotes.USD.price) {
             const randomGood = Math.floor(Math.random() * goodGifs.length);
             message.channel.send(`The current price of doge is ${data.quotes.USD.price}. 
 The previous price was ${previousCost}.
@@ -46,7 +46,7 @@ ${goodGifs[randomGood]}`)
             const randomBad = Math.floor(Math.random() * badGifs.length);
 
             message.channel.send(`The current price of doge is ${data.quotes.USD.price}. 
-The previous price was ${previousCost}.
+The last time I checked for you, it was:  ${previousCost}.
 It's just a dip, HODL!
         
 ${badGifs[randomBad]}`)

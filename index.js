@@ -37,7 +37,7 @@ Please do not spam this bot as I am using a free api and don't want to DDOS them
         if (previousCost <= data.quotes.USD.price) {
             const randomGood = Math.floor(Math.random() * goodGifs.length);
             message.channel.send(`The current price of doge is $${data.quotes.USD.price}. 
-            The last time I checked for you, it was: $${previousCost}.
+The last time I checked for you, it was: $${previousCost}.
 To the moon!
         
 ${goodGifs[randomGood]}`)
